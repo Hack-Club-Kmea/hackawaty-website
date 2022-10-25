@@ -1,0 +1,104 @@
+:root {
+    --domainCardBorder: 5px;
+    --cardLeftOffAxis: -5px
+  }
+
+
+
+.domainCard{
+    border-left-color: #F8DB3C;
+    border-left-width: var(--domainCardBorder);
+    border-left-style: solid;
+    border-top-color: #F8DB3C;
+    border-top-width: var(--domainCardBorder);
+    border-top-style: solid;
+    border-top-left-radius: 10px;
+    padding: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0px 16px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+    width:325px;
+
+}
+
+.domainInnerCard{
+    background-color: #F8DB3C;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.domainCardImg{
+    height:250px;
+    width: 80%;
+    object-fit: contain;
+}
+
+
+.domainCardTitle{
+    font-family: inter;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+    font-size: 22px;
+    color: black;
+}
+
+
+.domainCardSubTitleCard{
+    background-color: black;
+    width: 90%;
+    margin-left: var(--cardLeftOffAxis);
+}
+
+
+.domainCardSubTitle{
+    font-family: inter;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 8px 0px;
+    margin-left: 41px;
+   
+}
+
+
+.domainCaptionTxt{
+    font-family: inter;
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0px;
+    padding: 0px;
+    margin: 0px 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.blockCard{
+  position: relative;
+  width: 100%;
+}
+
+.blockBrick{
+    height: 35px;
+    width: 35px;
+    background-color:#141414;
+    position: absolute;
+    right: -15px;
+    top: -20px;
+    transform: rotate(40deg);
+}
+.max-width-5{
+    max-width: 500px;
+    margin: 16px 0px;
+}

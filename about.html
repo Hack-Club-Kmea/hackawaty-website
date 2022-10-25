@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <link rel="stylesheet" href="./dist/css/hackathon.css" />
+    
+    <link
+      rel="shortcut icon"
+      href="./images/NEWLOGO1.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css//responsive.css" />
+    <link rel="stylesheet" href="./css//navbar.css" />
+    <link rel="stylesheet" href="./css/gallery_page.css" />
+    <title>HACKAWAY</title>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="The Engineer Hackathon" />
+    <meta
+      name="description"
+      content=" NITK's Annual Technical Fest Hackathon"
+    />
+    <meta
+      name="keywords"
+      content="blockchain,technical,fest,hackathon,contest,prizes,ai,ml,engineer"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Web Enthusiasts' Club NITK" />
+    <style>
+      .moon-img {
+        display: flex;
+        align-items: center;
+      }
+      .abt-btn {
+        border-radius: 10px;
+        width: 200px;
+        height: 60px;
+      }
+      .abt-btn1 {
+        display: flex;
+
+        flex-direction: column;
+      }
+      @media screen and (max-width: 480px) {
+        .moon-img {
+          display: none;
+        }
+        .about_sec_text {
+          text-align: center;
+        }
+
+        .abt-btn1 {
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="abt-body">
+    <header>
+      <div class="container">
+        <nav class="main-nav">
+          <a href="index.html" class="logo hero-glitch" data-text="HACKAWAY"
+            >HACKAWAY</a
+          >
+          <button
+            id="nav-button"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="nav-ham"
+              viewBox="0 0 100 100"
+              width="50"
+              onclick="this.classList.toggle('active')"
+            >
+              <path
+                class="nav-ham-line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+              />
+              <path class="nav-ham-line middle" d="m 30,50 h 40" />
+              <path
+                class="nav-ham-line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+              />
+            </svg>
+          </button>
+          <ul class="nav-list" id="nav-menu">
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="brochure.html" class="nav-link">Speakers</a>
+            </li>
+            <li>
+              <a href="sponsers.html" class="nav-link">Sponsers</a>
+            </li>
+            <li>
+              <a href="faq.html" class="nav-link">Faq</a>
+            </li>
+            <li>
+              <a href="team.html" class="nav-link">Organisers</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="header-text" style="width: 100%">
+        <div class="container" style="margin-top: 160px">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-easing="ease-out"
+            style="text-align: left"
+          >
+            <div class="row">
+              <div class="col" style="display: flex; align-items: center">
+                <div>
+                  <h2 class="text-white text-righ my-3 abt-us">About Us</h2>
+                  <div class="about_sec_text">
+                    Hack-a-way is a fully-fledged one of a kind
+                    beginner-friendly hackathon. Our aim is to provide a
+                    platform to create solutions or "hack ways" to real-world
+                    problems and let us make a significant change in the world,
+                    together.
+                  </div>
+                  <br />
+                  <div class="abt-btn1">
+                    <a href="https://google.com" target="_blank">
+                      <button class="abt-btn">Apply with Devfolio</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col moon-img">
+                <div style="height: fit-content">
+                  <img
+                    class="moon-img"
+                    style="width: 100%; height: auto; object-fit: fit"
+                    src="./images/hackathon/moon.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Important: Devfolio button -->
+      </div>
+      <div class="scroll-down-container">
+        <div class="inner-container">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prizes" id="prizes">
+      <div
+        class="prizes-div"
+        data-aos="zoom-in-down"
+        data-aos-delay="150"
+        data-aos-easing="ease-in"
+      >
+        <h3 class="prizes-head">Prizes will anounce soon....</h3>
+      </div>
+    </section>
+
+    <section class="section_hackathon_intro" id="section_hackathon_intro">
+      <div class="container">
+        <div class="align-middle">
+          <div class="row">
+            <div
+              class="container col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-easing="ease-out"
+            >
+              <h2 class="text-white my-3 abt-us">MISSION AND VISSION</h2>
+              <div class="about_sec_text">
+                Our mission is to help people adopt a hacking mindset so that
+                they can overcome the problems of our digital era and assure
+                quicker, more sustainable innovation cycles. We envision a
+                hackathon that will create solutions to problems we humans face
+                in real life by applying technologies relating to hardware,
+                software and design. We aim to provide a platform where everyone
+                can hack, find solutions and ultimately "hack a way" into a
+                better future.
+              </div>
+            </div>
+            <div
+              class="col-md-6 my-3 about_video"
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-easing="ease-out"
+            >
+              <img src="./images/hackathon/Mission.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tracks" id="tracks">
+      <div class="container" data-aos="zoom-in" data-aos-delay="150">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <div class="about-content-text mb-80">
+              <h3
+                class="text-center wow fadeInUp"
+                data-wow-delay="300ms"
+                style="
+                  font-size: 3em;
+                  visibility: visible;
+                  animation-delay: 300ms;
+                  animation-name: fadeInUp;
+                "
+              >
+                Problem Statements
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 order-2 order-lg-1">
+            <div class="about-content-text mb-80">
+              <h4 class="wow fadeInUp" data-wow-delay="300ms">Hardware</h4>
+              <p class="wow fadeInUp" data-wow-delay="300ms">
+                <i
+                  >Will release soon...💫
+                </i>
+              </p>
+            </div>
+          </div>
+
+          <!-- About Thumb -->
+          <div
+            class="col-12 col-md-6 order-1 order-lg-2 d-flex justify-content-center"
+          >
+            <div
+              class="about-thumb mb-80 wow fadeInUp"
+              data-wow-delay="300ms"
+              style="justify-content: center; display: flex"
+            >
+              <img
+                class="theme-image"
+                src="./images/hackathon/Hardware.svg"
+                alt="blockchain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <!-- About Thumb -->
+          <div
+            class="col-12 col-md-6 order-1 order-lg-1 d-flex justify-content-center"
+          >
+            <div
+              class="about-thumb mb-80 wow fadeInUp"
+              data-wow-delay="300ms"
+              style="justify-content: center; display: flex"
+            >
+              <img
+                class="theme-image"
+                src="./images/hackathon/Software.svg"
+                alt="AI - ML"
+                style="float: right"
+              />
+            </div>
+          </div>
+
+          <!-- About Content -->
+          <div class="col-12 col-md-6 order-2 order-lg-2">
+            <div class="about-content-text mb-80">
+              <h4 class="wow fadeInUp" data-wow-delay="300ms">Software</h4>
+              <p class="wow fadeInUp" data-wow-delay="300ms">
+                <i
+                  >Will release soon...💫
+                </i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 order-2 order-lg-1">
+            <div class="about-content-text mb-80">
+              <h4 class="wow fadeInUp" data-wow-delay="300ms">Hardware</h4>
+              <p class="wow fadeInUp" data-wow-delay="300ms">
+                <i
+                  >Will release soon ...💫
+                </i>
+              </p>
+            </div>
+          </div>
+
+          <!-- About Thumb -->
+          <div
+            class="col-12 col-md-6 order-1 order-lg-2 d-flex justify-content-center"
+          >
+            <div
+              class="about-thumb mb-80 wow fadeInUp"
+              data-wow-delay="300ms"
+              style="justify-content: center; display: flex"
+            >
+              <img
+                class="theme-image"
+                src="./images/hackathon/Design.svg"
+                alt="blockchain"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--<h3 class="track-end text-center mt-2">
+        Have an intersting idea that isn't related to the themes above? We'd love to hear about it nonetheless!
+      </h3>
+      <h3 class="track-end text-center mt-4">Although these are some suggested themes, you don't have to limit yourself
+        to these. <br>
+        Join the <a href="https://discord.gg/5dXu7vHr" target="_blank"
+          style="color: black; text-decoration: underline;"> Hackathon Discord server </a> for more information!
+      </h3>-->
+      </div>
+    </section>
+
+    <!-- <div class="timer">
+    <div style="padding-top: 2%;">
+      <h2 id="hcd-txt" style="text-align: center; font-size: 2.5rem;">
+        Hackathon Countdown
+      </h2>
+    </div>
+    <div class="row cd-row-1" style="text-align: center; justify-content: center;">
+      <div class="col-sm-3 cd">
+        Days
+      </div>
+      <div class="col-sm-3 cd">
+        Hours
+      </div>
+      <div class="col-sm-3 cd">
+        Minutes
+      </div>
+      <div class="col-sm-3 cd">
+        Seconds
+      </div>
+    </div>
+
+    <div class="row cd-row-2" style="text-align: center; justify-content: center;">
+      <div class="col-sm-3 cd">
+        <div data-days></div>
+      </div>
+      <div class="col-sm-3 cd">
+        <div data-hours></div>
+      </div>
+      <div class="col-sm-3 cd">
+        <div data-minutes></div>
+      </div>
+      <div class="col-sm-3 cd">
+        <div data-seconds></div>
+      </div>
+    </div>
+  </div>-->
+
+    
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start text-white contact_use"
+      id="contact_us "
+      style="background-color: rgb(20, 20, 20)"
+    >
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold engineer-logo">HACKAWAY</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #c004d9; height: 2px"
+              />
+              <p>
+                Hack-a-way is a fully-fledged, one of kind beginner-friendly
+                hackathon. Our aim is to provide a platform to create solutions
+                or "hack ways" into real-world problems and let’s us make a
+                significant change in the world
+              </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Discover</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #c004d9; height: 2px"
+              />
+              <p>
+                <a href="team.html" class="text-white link_hover">Our Team</a>
+              </p>
+              <p>
+                <a
+                  href="https://drive.google.com"
+                  target="_blank"
+                  class="text-white link_hover"
+                  download="Brochure"
+                  >Brochure</a
+                >
+              </p>
+              <p>
+                <a href="/#timeline" class="text-white link_hover">Schedule</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Location</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #c004d9; height: 2px"
+              />
+              <p>
+                <a
+                  href="https://goo.gl/maps/8dKPZMjVJGZFNTrS6"
+                  class="text-white link_hover"
+                  >KMEA Engineering College , Edathala , Aluva, 683564</a
+                >
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #c004d9; height: 2px"
+              />
+              <p>
+                <i class="fas fa-envelope mr-3"></i>
+                <a href="mailto:hackclubkmea@gmail.com" class="link_hover"
+                  >hackclubkmea@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <section
+        class="d-flex justify-content-center p-4 center mt-3"
+        style="background-color: rgb(20, 20, 20)"
+      >
+        <div class="social-icon">
+          <!-- <a
+            href="mailto:nitkengineer2022@gmail.com"
+            class="text-white me-4"
+            target="_blank"
+          >
+            <i class="fab fa-google"></i>
+          </a> -->
+          <a
+            href="https://instagram.com/hack_a___"
+            class="text-white me-4"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/hackaway_"
+            class="text-white me-4"
+            target="_blank"
+          >
+            <i class="fab fa-twitter-square"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/channel/UCRoYpvqfgZWRMeMEmgl05sg"
+            class="text-white me-4"
+            target="_blank"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </section>
+      <!-- Copyright -->
+      <div
+        class="text-center p-3 my-3"
+        style="background-color: rgba(20, 20, 20, 1)"
+      >
+        Developed by
+        <a href="https://twitter.com/ashnat__" rel="nofollow">Ashna T</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Scripts -->
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timezz@6.1.0/dist/timezz.min.js"></script>
+    <script>
+      var timez = new timezz(".timer", {
+        date: "Sept 24, 2022 14:00:00",
+        canContinue: true,
+        withYears: false,
+        stop: false,
+        beforeCreate() {},
+        beforeDestroy() {},
+        update(event) {},
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+
+    <!-- Local Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
