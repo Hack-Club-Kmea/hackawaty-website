@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- slick carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+
+    <title>HACKAWAY</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/NEWLOGO1.png" type="image/x-icon" />
+
+    <!-- local style sheets -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <link rel="stylesheet" href="./css//responsive.css" />
+    <link rel="stylesheet" href="./css//navbar.css" />
+    <link rel="stylesheet" href="./css/gallery_page.css" />
+    <link rel="stylesheet" href="./css/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLS4THWWW2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RLS4THWWW2');
+        gtag('config', 'UA-220930637-1');
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+    <script>
+        function modalClose() {
+            document.getElementById("modalClosing").style.display = "none";
+        }
+    </script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Gelasio&display=swap");
+        * {
+            box-sizing: border-box;
+        }
+        
+        body,
+        html {
+            overflow-x: hidden;
+        }
+        
+        .bar {
+            width: 100%;
+            padding: 2px 0;
+            border: 1px solid red;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+            font-size: 18px;
+        }
+        
+        .bar_content {
+            display: block;
+            /* Important to give the content a width */
+            width: 100%;
+            transform: translateX(100%);
+            /* Animation start out of the screen */
+            /* Add the animation */
+            animation: move 30s linear infinite/* infinite make reapeat the animation indefinitely */
+            ;
+        }
+        /* Create the animation */
+        
+        @keyframes move {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+
+            <nav class="main-nav">
+                <a href="#index.html" class="logo hero-glitch" data-text="HACKAWAY">HACKAWAY</a>
+                <button id="nav-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="nav-ham" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
+            <path class="nav-ham-line top"
+              d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="nav-ham-line middle" d="m 30,50 h 40" />
+            <path class="nav-ham-line bottom"
+              d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+          </svg>
+        </button>
+                <ul class="nav-list" id="nav-menu">
+                    <li>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="brochure.html" class="nav-link">Speakers</a>
+                    </li>
+                    <li>
+                        <a href="sponsers.html" class="nav-link">Sponsers</a>
+                    </li>
+                    <li>
+                        <a href="faq.html" class="nav-link">Faq</a>
+                    </li>
+                    <li>
+                        <a href="team.html" class="nav-link">Organisers</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+    <section class="hero" id="hero">
+        <video type="video/mp4" src="./videos/LandingVid.mp4" autoplay muted loop id="hero_video"></video>
+
+        <div class="main-start">
+            <div class="container">
+                <div class="home-top-space-custom" style="margin-bottom: 50px;"></div>
+                <div style="
+              -moz-user-select: none;
+              -webkit-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              -o-user-select: none;
+
+
+            " unselectable="on" onselectstart="return false;">
+
+
+
+
+                    <hp class=" home-page-text  home-page-text heading-2" style=" letter-spacing: 1px;">
+                        Hack-A-Way
+                        </h>
+                        <P class='display-1 home-page-text heading' style="font: size 20px;"><span>To continue trying... </span></P>
+
+
+
+                        <!-- <div class="flex-w flex-col p-t-34 respon3">
+            <div>
+              <span class="l1-txt1 p-b-30 days" id="days"></span><br>
+              <span class="s1-txt1">Days</span>
+            </div>
+
+            <div class="flex-col wsize1 m-b-40 respon4">
+              <span class="l1-txt1 p-b-30 hours" id="hours"></span><br>
+              <span class="s1-txt1">Hours</span>
+            </div>
+
+            <div class="flex-col wsize1 m-b-40 respon4">
+              <span class="l1-txt1 p-b-30 minutes" id="minutes"></span><br>
+
+              <span class="s1-txt1">Minutes</span>
+            </div>
+
+            <div class="flex-col wsize1 m-b-40 respon4">
+              <span class="l1-txt1 p-b-30 seconds" id="seconds"></span><br>
+              <span class="s1-txt1">Seconds</span>
+            </div>
+          </div>-->
+
+
+                </div>
+
+                <a href="https://google.com" target="_blank">
+                    <button style="border-radius: 10px; width: 200px; height: 60px;">Apply with Devfolio</button>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="bar">
+        <span class="bar_content">
+      HACKATHON | SOFTWARE | DESIGN | HARDWARE | 48 HOURS | FREE | NOVEMBER 23 - NOVEMBER 25TH |
+    </span>
+    </div>
+
+
+
+
+
+
+    <!--
+  <section id="tag_line_page">
+    
+    <div class="pg2-navigator">
+      <a href="#hero"><img src="images/navigator.png" alt="" /></a>
+    </div>
+    <h1 class="logo hero-glitch" style="text-align:center ; color: white;">DOMAINS</h1>
+    <div class="pg2-content" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out">
+     
+      <div class="pg2-think">
+        <div class="pg2-think-img">
+          <img src="images/software.png" alt="" />
+        </div>
+        <div class="pg2-c-h">
+          <h2>Software</h2>
+          <div class="pg2-think-content">
+            Since the creation of the first computer, softwares have been a major part of anything related to a
+                  screen. They have been implemented on a larger scale since smartphones were introduced to this world.
+          </div>
+        </div>
+      </div>
+
+      <div class="pg2-line">
+        <div class="pg2-vl"></div>
+      </div>
+
+
+
+      <div class="pg2-create" data-aos="fade-up" data-aos-delay="250" data-aos-easing="ease-out">
+        <div class="pg2-create-img">
+          <img src="images/hardware.png" alt="" />
+        </div>
+        <div class="pg2-c-h">
+          <h2>Hardware</h2>
+          <div class="pg2-create-content">
+            Challenge yourself and get your hands dirty solving hardware-related problems by applying technologies
+                  from IoT to Robotics. The options are limitless!
+          </div>
+        </div>
+      </div>
+
+      <div class="pg2-line">
+        <div class="pg2-vl"></div>
+      </div>
+
+      <div class="pg2-engineer" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-out">
+        <div class="pg2-engineer-img">
+          <img src="images/design.png" alt="" />
+        </div>
+
+        <div class="pg2-c-h">
+          <h2>Design</h2>
+          <div class="pg2-engineer-content">
+            Designers are the leading
+            edges of creating something extraordinary. Create something that generates an unforgettable user
+            experience.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ -->
+
+
+
+
+    <section id="tag_line_page">
+
+        <div class="pg2-navigator">
+            <a href="#hero"><img src="images/navigator.png" alt="" /></a>
+        </div>
+        <h1 style="text-align:center ; color: white;">Verticals For The Hackathon</h1>
+        <div style="text-align: center ; color: #e2e8ed;">
+            <p>Every Domain Has Interesting Hacks💫</p>
+        </div>
+        <div class="pg2-content" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out">
+
+
+            <div class="row" style="width: 100%;">
+
+                <div class="col max-width-3" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out">
+                    <div class="domainCard">
+                        <div class="d-flex justify-content-end">
+                            <img src="./images/team_2k22/software.svg" alt="Team Image" class="domainCardImg" />
+                        </div>
+                        <div class="domainInnerCard">
+                            <div class="blockCard">
+                                <div class="blockBrick"></div>
+                            </div>
+                            <p class="domainCardTitle">Vertical 1</p>
+                            <div class="domainCardSubTitleCard">
+                                <p class="domainCardSubTitle">Software</p>
+                            </div>
+
+
+                            <p class="domainCaptionTxt">Software formulate solutions and develop a series of codes by incubating infant ideas, decoding problems and planning processes.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col max-width-3" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out">
+                    <div class="domainCard">
+                        <div class="d-flex justify-content-end">
+                            <img src="./images/team_2k22/design1.png" alt="Team Image" class="domainCardImg" />
+                        </div>
+                        <div class="domainInnerCard">
+                            <div class="blockCard">
+                                <div class="blockBrick"></div>
+                            </div>
+                            <p class="domainCardTitle">Vertical 2</p>
+                            <div class="domainCardSubTitleCard">
+                                <p class="domainCardSubTitle"> Design</p>
+                            </div>
+                            <p class="domainCaptionTxt">Design Create the ideas and frame the concepts beyond the ceiling of design thinking and design doing, making realistic and pragmatic design.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col max-width-3" data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-out">
+                    <div class="domainCard">
+                        <div class="d-flex justify-content-end">
+                            <img src="./images/team_2k22/hardware1.png" alt="Team Image" class="domainCardImg" />
+                        </div>
+                        <div class="domainInnerCard">
+                            <div class="blockCard">
+                                <div class="blockBrick"></div>
+                            </div>
+                            <p class="domainCardTitle">Vertical 3</p>
+                            <div class="domainCardSubTitleCard">
+                                <p class="domainCardSubTitle">Hardware</p>
+                            </div>
+                            <p class="domainCaptionTxt">Hardware Push the limits and challenge the status quo to test out some crazy ideas, grouping technology applications from IoT to Robotics.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- timeline -->
+
+
+    <h1 class="text-white glimps-engi" id="timeline" style="padding-bottom:40px !Important; margin-top: 100px; text-align: center; ">
+        Event Shedule</h1>
+
+    <div class="media" style="padding-top: 30px; border-radius: 10px;">
+
+        <div class="container" style="padding: 30px; background-color: #FD612E; border-top-left-radius: 10px;  border-top-right-radius: 10px; ">
+            <div class="row">
+                <div class="col btn">
+                    <button onclick="onBtn1Press()" class="btn1">
+                  THURS NOV 23</button>
+                </div>
+                <div class="col btn">
+                    <button onclick="onBtn2Press()" class="btn2">
+                  FRI NOV 24</button>
+                </div>
+                <div class="col btn">
+                    <button onclick="onBtn3Press()" class="btn3">
+                  SAT NOV 25
+                </button>
+                </div>
+            </div>
+
+            <div class="card1" id="card1">
+                <table>
+
+                    <tr>
+                        <td class="rgt">3:00</td>
+                        <td class="lft">Check in</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">03:10 pm</td>
+                        <td class="lft">Team formation</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">03:30 PM</td>
+                        <td class="lft">Inauguration ceremony</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">03:40 PM </td>
+                        <td class="lft">Intro to Hack-a-way</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt"> 04:00 PM</td>
+                        <td class="lft">Hack-a-way begins </td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">05:00 PM</td>
+                        <td class="lft">Tea Break</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">05:15 PM</td>
+                        <td class="lft">Hack-a-way resumes </td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">08:30 PM</td>
+                        <td class="lft">Dinner</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">09:00 PM</td>
+                        <td class="lft">Games session</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt"> 10:00 PM </td>
+                        <td class="lft">Hack-a-way resumes</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt"> 12:00 AM </td>
+                        <td class="lft">Midnight Snacks</td>
+
+                    </tr>
+
+                </table>
+            </div>
+            <div class="card2" id="card2">
+                <table>
+
+                    <tr>
+                        <td class="rgt">08:30 AM </td>
+                        <td class="lft">Hack-a-way resumes</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt"> 01:30 PM</td>
+                        <td class="lft">Lunch</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt"> 02:00 PM </td>
+                        <td class="lft">Hack-a-way resumes</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">04:30 PM </td>
+                        <td class="lft">Red-Bull Bash</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt"> 05:00 PM </td>
+                        <td class="lft">Hack-a-way resumes</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt"> 08:30 PM</td>
+                        <td class="lft"> Dinner </td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt"> 09:00 PM</td>
+                        <td class="lft"> Hack-a-way resumes </td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt"> 11:00 PM </td>
+                        <td class="lft"> Grand Campfire </td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt"> 12:00 AM</td>
+                        <td class="lft"> Midnight Snacks </td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class="card3" id="card3">
+                <table>
+
+                    <tr>
+                        <td class="rgt">08:30 AM </td>
+
+                        <td class="lft">Breakfast</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">12:00 AM </td>
+                        <td class="lft">Lunch</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">12:30 AM </td>
+                        <td class="lft">Presentation</td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">03:00 PM </td>
+                        <td class="lft">Results declaration </td>
+
+                    </tr>
+                    <tr>
+                        <td class="rgt">03:30 PM</td>
+                        <td class="lft">Closing ceremony</td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container" style=" background-color: #fcfcfc;">
+        <img src="./images/hackathon/grid.svg" alt="" style="width: 300px; height:100px; align-items: center; display: block;
+          margin-left: auto;
+          margin-right: auto" />
+    </div>
+
+
+
+
+
+
+
+
+    <style>
+        @media screen and (max-width: 480px) {
+            .btn1 {
+                height: 50px;
+                width: 100%;
+            }
+            .container {
+                width: 400px;
+            }
+        }
+        
+        .td {
+            color: #FD612E;
+            font-size: larger;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        th,
+        td {
+            border: 1px solid rgb(185, 185, 185);
+        }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            border-left-style: solid;
+            border-right-style: solid;
+            border-color: #4a44be00;
+        }
+        
+        td,
+        th {
+            text-align: center;
+            padding: 8px;
+        }
+        
+        .container1 {
+            display: inline-block;
+            width: 130px;
+        }
+        
+        .lft {
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #fff;
+            text-align: left;
+        }
+        
+        .rgt {
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #fff;
+            text-align: right;
+        }
+        
+        .btn1 {
+            height: 50px;
+            width: 100%;
+            background-color: #000000;
+            color: #fff;
+            border-radius: 4px;
+            border: none;
+            box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.199);
+        }
+        
+        .btn1:hover {
+            background-color: #fdfdfd54;
+        }
+        
+        .btn2 {
+            height: 50px;
+            width: 100%;
+            background-color: #000000;
+            border-radius: 4px;
+            border: none;
+            color: #fff;
+            box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.199);
+        }
+        
+        .btn2:hover {
+            background-color: #fdfdfd54;
+        }
+        
+        .btn3 {
+            height: 50px;
+            width: 100%;
+            background-color: #000000;
+            border-radius: 4px;
+            border: none;
+            color: #fff;
+            box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.199);
+        }
+        
+        .btn3:hover {
+            background-color: #fdfdfd54;
+        }
+        
+        .card1 {
+            background-color: #FD612E;
+        }
+        
+        .card2 {
+            background-color: #FD612E;
+            display: none;
+        }
+        
+        .card3 {
+            background-color: #FD612E;
+            display: none;
+        }
+        /* Inforamation Bar */
+        
+        #information-bar {
+            background: #fff;
+            position: relative;
+        }
+        
+        #information-bar .inforation-wrapper {
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 8px 24px #e2e8ed;
+            margin-bottom: -35px;
+            margin-top: -35px;
+            padding: 45px 0;
+            position: relative;
+            top: -40px;
+            z-index: 999;
+        }
+        
+        #information-bar ul {
+            text-align: center;
+        }
+        
+        #information-bar ul li {
+            display: inline-block;
+        }
+        
+        #information-bar ul li i {
+            text-align: center;
+            padding: 0 12px;
+            font-size: 32px;
+            vertical-align: middle;
+            background-image: linear-gradient(0deg, #FD612E 0, #00bfff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        #information-bar ul li span {
+            font-size: 13px;
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
+        }
+        
+        #information-bar ul li span b {
+            font-size: 20px;
+            color: #374045;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        .event-schedule-button-section {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 32px 0px;
+        }
+        
+        .event-schedule-button {
+            padding: 16px 12px;
+            background: linear-gradient(45deg, rgb(5, 64, 115), rgb(15, 150, 71));
+            border-radius: 8px;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .event-schedule-button:hover {
+            color: rgb(210, 210, 210);
+        }
+    </style>
+    <section class="timeline-section event-schedule-button-section">
+        <br>
+        <a class="event-schedule-button" href="https://drive.google.com/file/d/1kVXqybH0jBKebistk00YPO5XMiGPiSOK/view?usp=sharing"> Download Prospectus
+    </a>
+    </section>
+
+
+    <div class="home-top-space-custom"></div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white contact_use" id="contact_us " style="background-color: rgb(20, 20, 20)">
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold engineer-logo">HACKAWAY</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #c004d9; height: 2px" />
+                        <p>
+                            Hack-a-way is a fully-fledged, one of kind beginner-friendly hackathon. Our aim is to provide a platform to create solutions or "hack ways" into real-world problems and let’s us make a significant change in the world
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Discover</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #c004d9; height: 2px" />
+                        <p>
+                            <a href="team.html" class="text-white link_hover">Our Team</a>
+                        </p>
+                        <p>
+                            <a href="https://drive.google.com" target="_blank" class="text-white link_hover" download="Brochure">Brochure</a>
+                        </p>
+                        <p>
+                            <a href="/#timeline" class="text-white link_hover">Schedule</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Location</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #c004d9; height: 2px" />
+                        <p>
+                            <a href="https://goo.gl/maps/8dKPZMjVJGZFNTrS6" class="text-white link_hover">KMEA Engineering College ,
+                Edathala , Aluva, 683564</a>
+                        </p>
+
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #c004d9; height: 2px" />
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i>
+                            <a href="mailto:hackclubkmea@gmail.com" class="link_hover">hackclubkmea@gmail.com</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <section class="d-flex justify-content-center p-4 center mt-3" style="background-color: rgb(20, 20, 20)">
+            <div class="social-icon">
+
+                <!-- <a
+            href="mailto:nitkengineer2022@gmail.com"
+            class="text-white me-4"
+            target="_blank"
+          >
+            <i class="fab fa-google"></i>
+          </a> -->
+                <a href="https://instagram.com/hack_a___" class="text-white me-4" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/hackaway_" class="text-white me-4" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+
+                <a href="https://www.youtube.com/channel/UCRoYpvqfgZWRMeMEmgl05sg" class="text-white me-4" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-center p-3 my-3" style="background-color: rgba(20, 20, 20, 1)">
+            Developed by
+            <a href="https://twitter.com/ashnat__" rel="nofollow">Ashna T</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Local Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/session.js"></script>
+</body>
+
+</html>
